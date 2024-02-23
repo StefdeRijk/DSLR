@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import argparse
+pd.options.mode.chained_assignment = None
 
 
 def show_one(data, house_names, x_course, y_course):

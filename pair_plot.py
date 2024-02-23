@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+pd.options.mode.chained_assignment = None
 
 
 if __name__ == '__main__':
