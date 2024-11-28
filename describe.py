@@ -1,6 +1,6 @@
 import argparse
 import pandas as pd
-from math import sqrt, pow, ceil
+from math import sqrt, pow
 
 
 def get_count(data):
