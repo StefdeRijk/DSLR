@@ -1,9 +1,11 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import argparse
+pd.options.mode.chained_assignment = None
 
 
 def show_one(data, house_names, course):
+    plt.figure(figsize=(15, 10))
     for house in house_names:
         plt.hist(data[house][course], alpha=0.25, label=house)
     plt.title(course)
@@ -14,7 +16,7 @@ def show_one(data, house_names, course):
 
 
 def show_all(data, house_names):
-    fig, ax = plt.subplots(3, 5)
+    fig, ax = plt.subplots(3, 5, figsize=(30, 20))
 
     i = 0
     j = 0

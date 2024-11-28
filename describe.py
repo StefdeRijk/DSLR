@@ -31,7 +31,7 @@ def get_mean(data):
 def get_std(data, means):
     stds = []
     for index, column in enumerate(data.columns):
-        mean = means[index]
+        mean = means.iloc[index]
         sum_squares = 0
         length = 0
         for value in data[column]:

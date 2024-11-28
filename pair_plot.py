@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+pd.options.mode.chained_assignment = None
 
 
 if __name__ == '__main__':
@@ -12,7 +13,7 @@ if __name__ == '__main__':
         house_data[house] = data[data['Hogwarts House'] == house]
         house_data[house].drop('Hogwarts House', axis=1, inplace=True)
 
-    fig, ax = plt.subplots(len(house_data[house_names[0]].columns), len(house_data[house_names[0]].columns))
+    fig, ax = plt.subplots(len(house_data[house_names[0]].columns), len(house_data[house_names[0]].columns), figsize=(30, 20))
 
     i = 0
     j = 0
